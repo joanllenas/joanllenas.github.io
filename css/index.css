@@ -1,0 +1,47 @@
+body {
+  font-family: 'Lora', serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h5 a {
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.chip {
+  color: #fff;
+  background: #c0c0c0;
+  padding: 2px 12px;
+  border-radius: 32px;
+  font-size: x-small;
+}
+
+header {
+  padding-left: 40px;
+  border-bottom: 1px solid #222;
+}
+header h1 {
+  font-size: xx-large;
+}
+header h2 {
+  font-size: medium;
+}
+header h3 {
+  font-size: small;
+}
+
+.gitgraph-detail {
+  border-bottom: 1px solid #ccc;
+  margin-left: -20px;
+}
