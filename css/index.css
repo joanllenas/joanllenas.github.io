@@ -46,3 +46,8 @@ header h3 {
     margin-left: -30px;
   }
 }
+@media (min-width: 1281px) {
+  .gitgraph-detail {
+    margin-left: 15px;
+  }
+}
