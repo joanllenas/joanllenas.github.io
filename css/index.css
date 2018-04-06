@@ -30,6 +30,7 @@ a:hover {
 header {
   padding-left: 40px;
   border-bottom: 1px solid #222;
+  margin-bottom: 60px;
 }
 header h1 {
   font-size: xx-large;
