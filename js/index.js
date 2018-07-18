@@ -34,6 +34,10 @@ year.commit({ message: "End of 2018" });
 var articles = year.branch("Article");
 var github = year.branch("GitHub");
 
+articles.commit({
+  message: "Jul 18, 2018",
+  detailId: "Controlled-number-input-with-Floats-in-Elm"
+});
 github.commit({ message: "Mar 11, 2018", detailId: "ts-data-maybe" });
 articles.commit({
   message: "Feb 12, 2018",
