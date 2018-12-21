@@ -34,6 +34,7 @@ year.commit({ message: "End of 2018" });
 var articles = year.branch("Article");
 var github = year.branch("GitHub");
 
+github.commit({ message: "Dec 17, 2018", detailId: "ngx-remotedata" });
 github.commit({ message: "Sep 25, 2018", detailId: "ts-data-either" });
 articles.commit({
   message: "Jul 18, 2018",
