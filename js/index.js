@@ -34,6 +34,11 @@ year.commit({ message: "End of 2018" });
 var articles = year.branch("Article");
 var github = year.branch("GitHub");
 
+articles.commit({
+  message: "Dec 23, 2018",
+  detailId: "decoding-json-with-typescript"
+});
+github.commit({ message: "Dec 21, 2018", detailId: "ts-data-json" });
 github.commit({ message: "Dec 17, 2018", detailId: "ngx-remotedata" });
 github.commit({ message: "Sep 25, 2018", detailId: "ts-data-either" });
 articles.commit({
