@@ -28,6 +28,23 @@ var master = gitgraph.branch("joanllenas");
 master.commit({ message: "HEAD" });
 
 
+// 2019
+var year = master.branch("2019");
+year.commit({ message: "End of 2019" });
+var articles = year.branch("Article");
+var github = year.branch("GitHub");
+
+articles.commit({
+  message: "Dec 26, 2019",
+  detailId: "safer-code-with-container-types"
+});
+
+articles.merge(year).delete();
+github.merge(year).delete();
+year.merge(master).delete();
+
+
+
 // 2018
 var year = master.branch("2018");
 year.commit({ message: "End of 2018" });
