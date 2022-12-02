@@ -1,0 +1,27 @@
+{
+  "name": "cvsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/style.scss dist/assets/style.css",
+    "build:ts": "tsc",
+    "build:copyfiles": "mkdir -p dist && cp -r public/* dist",
+    "build": "rm -rf dist && npm run build:copyfiles && npm run build:css && npm run build:ts",
+    "watch:css": "chokidar \"src/**/*.scss\" -c \"npm run build:css\"",
+    "watch:ts": "chokidar \"src/**/*.ts\" -c \"npm run build:ts\"",
+    "watch:public": "chokidar \"public/**/*.*\" -c \"npm run build:copyfiles\"",
+    "start": "npm run build && concurrently \"http-server dist\" \"npm run watch:public\" \"npm run watch:css\" \"npm run watch:ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1",
+    "prettier": "^2.8.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3"
+  }
+}
