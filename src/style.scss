@@ -12,15 +12,15 @@
   --gap-lg: 1rem;
   --gap-xl: 2rem;
 
-  // THEME -------
-
   --color-primary: #c84b31;
   --color-black: #191919;
   --color-white: #ecdbba;
 
-  --color-jobs: #e60400;
-  --color-articles: rgb(85, 150, 85);
-  --color-code: #3194f6;
+  // THEME -------
+
+  --color-articles: #277420;
+  --color-code: #191919c4;
+  --color-jobs: #287475;
 
   --background-color-high-constrast: var(--color-white);
   --background-color-low-constrast: var(--color-black);
@@ -33,6 +33,10 @@
 }
 
 html[data-theme='dark'] {
+  --color-articles: #00ff0066;
+  --color-code: #ecdbbac4;
+  --color-jobs: #00ffff66;
+
   --background-color-high-constrast: var(--color-black);
   --background-color-low-constrast: var(--color-white);
 
@@ -146,8 +150,6 @@ h6 {
 header {
   padding-top: var(--gap-lg);
   padding-bottom: var(--gap-xl);
-  margin-left: var(--gap-md);
-  margin-right: var(--gap-md);
   text-align: center;
 
   h1 {
