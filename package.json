@@ -11,7 +11,8 @@
     "watch:css": "chokidar \"src/**/*.scss\" -c \"npm run build:css\"",
     "watch:ts": "chokidar \"src/**/*.ts\" -c \"npm run build:ts\"",
     "watch:public": "chokidar \"public/**/*.*\" -c \"npm run build:copyfiles\"",
-    "start": "npm run build && concurrently \"http-server dist\" \"npm run watch:public\" \"npm run watch:css\" \"npm run watch:ts\""
+    "start": "npm run build && concurrently \"http-server dist\" \"npm run watch:public\" \"npm run watch:css\" \"npm run watch:ts\"",
+    "gh-deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
