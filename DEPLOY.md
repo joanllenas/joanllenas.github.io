@@ -3,7 +3,7 @@
 Run the following command
 
 ```
-git subtree push --prefix dist origin gh-pages
+npm run gh-deploy
 ```
 
 > More info https://gist.github.com/cobyism/4730490
