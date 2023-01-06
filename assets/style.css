@@ -8,9 +8,9 @@
   --gap-md: 0.5rem;
   --gap-lg: 1rem;
   --gap-xl: 2rem;
-  --color-primary: #c84b31;
   --color-black: #191919;
   --color-white: #ecdbba;
+  --color-primary: #c84b31;
   --color-articles: #277420;
   --color-code: #191919c4;
   --color-jobs: #287475;
@@ -23,6 +23,7 @@
 }
 
 html[data-theme=dark] {
+  --color-primary: #b47365;
   --color-articles: #00ff0066;
   --color-code: #ecdbbac4;
   --color-jobs: #00ffff66;
